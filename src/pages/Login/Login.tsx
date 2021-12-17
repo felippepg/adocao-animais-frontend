@@ -51,7 +51,7 @@ export const Login = () => {
           />
         <br/>
         <input className={style.button} type="submit" value="Entrar" />
-        <div className={style.errorMessage}>{error}</div>
+        {error && <div className={style.errorMessage}>{error}</div>}
         <a href="/signup">Não possui cadastro? Crie a sua conta agora</a>
       </form>
     </div>

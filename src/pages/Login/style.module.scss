@@ -62,6 +62,19 @@
         filter:brightness(0.8)
       }
     }
+    .errorMessage {
+      font-size: 20px;
+      color: coral;
+      text-decoration: none;
+      margin: auto;
+      font-family: 'Roboto', sans-serif;
+      align-self: center;
+      width: auto;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 2px;
+      height: 20px;
+    }
     a {
       font-size: 20px;
       color: white;
