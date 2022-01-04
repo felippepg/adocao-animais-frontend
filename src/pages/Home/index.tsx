@@ -17,7 +17,7 @@ export const Home = () => {
                 <ul>
                   <li><a href="/adocao">Adotar</a></li>
                   <li><a href="#">Encontrados</a></li>
-                  <li><a href="/add-pet">Cadastrar Pet</a></li>
+                  <li><a href="/pet/add">Cadastrar Pet</a></li>
                 </ul>
               </nav>
               <div>

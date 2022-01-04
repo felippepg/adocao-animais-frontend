@@ -1,0 +1,135 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  line-height: 28px;
+}
+.animalForm {
+  display: flex;
+  height: 700px;
+  margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    .animalInput {
+      height: 50px;
+      width: 1280px;
+      font-size: 16px;
+      line-height: 24px;
+      background-color: #3C3B3B;
+      border: none;
+      outline: 0;
+      color: white;
+      margin-top: 20px;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &::placeholder {
+        color: #8d8d99
+      }
+    }
+  
+  .inputFields {
+    display: flex;
+    justify-content: space-between;
+
+    select {
+      background-color: #3C3B3B;
+      border: none;
+      outline: 0;
+      color: white;
+      margin-top: 20px;
+      padding: 10px;
+      width: 420px;
+      font-size: 16px;
+  
+      &:hover {
+        filter:brightness(0.8)
+      }
+    }
+    .inputRadio {
+      display: flex;
+      height: 37px;
+      margin-top: 20px;
+      background-color: #3C3B3B;
+      padding: 10px;
+      align-items: center;
+    }
+    .animalRadioInput {
+      background-color: #3C3B3B;
+      border: none;
+      outline: 0;
+      color: white;
+      margin-top: 20px;
+      padding: 10px;
+      width: 127px;
+    }
+  }
+  textarea {
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    resize: none;
+    height: 495px;
+    color: #e1e1e6;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &::placeholder {
+      color: #8d8d99
+    }
+  }
+  .errorMessage {
+    font-size: 20px;
+    color: coral;
+    text-decoration: none;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    width: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    height: 20px;
+  }
+  a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+  }
+  .inputSubmit {
+    background: linear-gradient(100deg, #ff008e 0.48%, #ffcd1e 100%);
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 30px;
+    padding: 10px 40px;
+    height: 56px;
+    width: 500px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      filter:brightness(0.8)
+    }
+  }
+}
