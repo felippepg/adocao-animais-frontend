@@ -25,6 +25,7 @@ interface Animal {
 export const Adocao = () => {
   const [animals, setAnimals] = useState<Animal>()
   const [offSet, setOffset] = useState(0)
+  const [info, setInfo] = useState('')
 
   let config = {
     headers: {
@@ -38,6 +39,20 @@ export const Adocao = () => {
     .catch(error => console.log(error))
 
   },[offSet])
+
+  const handleAdoption = (animalId: number) => {
+    setInfo('')
+    const userId = localStorage.getItem('USER_ID')
+    
+    api.post('/adoption', {userId, animalId}, config)
+      .then(response => setInfo(response.data.result))
+      .catch(error => console.log(error))
+
+    setTimeout(() => {
+      return window.location.href = '/'
+    }, 3000);
+
+  }
 
   return(
     <div className={global.container}>
@@ -64,12 +79,15 @@ export const Adocao = () => {
                 <h2>{item.name}</h2>
                 <h4>Idade - {item.age} Meses </h4>
                 <p>{item.bio}</p>
-                <button>adotar</button>
+                <button onClick={() => handleAdoption(item.id)}>adotar</button>
               </div>
             </div>
           )
         })}
       </div>
+      <br />
+
+      {info && <div className={styles.successMessage}><div>{info}</div></div>}
       <div className={styles.paginationWrapper}>
         {animals?.total._count && (
           <Pagination 

@@ -3,6 +3,7 @@ export const Home = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('TOKEN')
+    localStorage.removeItem('USER_ID')
     location.reload()
   }
 
@@ -18,6 +19,7 @@ export const Home = () => {
                   <li><a href="/adocao">Adotar</a></li>
                   <li><a href="#">Encontrados</a></li>
                   <li><a href="/pet/add">Cadastrar Pet</a></li>
+                  <li><a href="#">Meus Pets</a></li>
                 </ul>
               </nav>
               <div>
@@ -32,7 +34,7 @@ export const Home = () => {
 
         <div className={style.container}>
           <div className={style.footerContainer}>
-            <a href="#">Adotar um Pet</a>
+            <a href="/adocao">Adotar um Pet</a>
             <a href="#">Sobre Nós</a>
           </div>
         </div>

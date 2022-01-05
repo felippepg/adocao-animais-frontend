@@ -22,6 +22,7 @@ export const Login = () => {
         return setError(response.data.error)
       } else {
         localStorage.setItem('TOKEN', response.data.token)
+        localStorage.setItem('USER_ID', response.data.id)
         console.log(response.data)
         window.location.href="/"
         return
