@@ -3,3 +3,29 @@
   margin: auto;
   background-color: #202020;
 }
+.pagination {
+  display: flex;
+  list-style: none;
+
+  li {
+    button {
+      width: 100px;
+      background-color: #484646;
+      border: none;
+      color: white;
+    }
+  }
+
+  li + li {
+    margin-left: 1rem;
+  }
+  .__item--active {
+    background: linear-gradient(100deg, #ff008e 0.48%, #ffcd1e 100%);
+    font-weight: bold;
+    
+    :focus {
+      outline: none;
+    }
+
+  }
+}

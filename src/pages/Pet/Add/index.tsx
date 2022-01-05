@@ -59,7 +59,7 @@ export const Add = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event?.preventDefault()
     setError('')
-    if(!name) {
+    if(!name || !bio) {
       setError('Preencha os campos corretamente')
       return
     }
