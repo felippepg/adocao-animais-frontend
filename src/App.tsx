@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom"
 import { PrivateRoute } from "./components/PrivateRouter"
 import { Adocao } from "./pages/Adocao"
 import { Add } from "./pages/Pet/Add"
+import { All } from "./pages/Pet/All"
 import { SignUp } from "./pages/SignUp/SignUp"
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
         <PrivateRoute exact path="/" component={Home}/>
         <PrivateRoute exact path="/adocao" component={Adocao}/>
         <PrivateRoute exact path="/pet/add" component={Add} />
+        <PrivateRoute exact path="/pet/all" component={All} />
       </Switch>
     </BrowserRouter>
   )

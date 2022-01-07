@@ -15,7 +15,7 @@ export const NavBar = () => {
             <nav>
               <ul>
                 <li><a href="/adocao">Adotar</a></li>
-                <li><a href="#">Encontrados</a></li>
+                <li><a href="/pet/all">Encontrados</a></li>
                 <li><a href="/pet/add">Cadastrar Pet</a></li>
                 <li><a href="#">Meus Pets</a></li>
               </ul>

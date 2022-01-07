@@ -1,0 +1,108 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  line-height: 28px;
+}
+
+.animalWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 450px;
+
+  .animalItem {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background-color: #484646;
+
+    .animalItemImg {
+      height: 150px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .animalItemInfo {
+      h2 {
+        margin-left: 15px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+      }
+      h4 {
+        margin-left: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+      }
+      p {
+        border: 0;
+        resize: none;
+        color: #e1e1e6;
+        font-size: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        font-family: 'Roboto', sans-serif;
+        height: 97px;
+      }
+      .disponivel {
+        color: green;
+        margin-left: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+      }
+      .adotado {
+        color: red;
+        margin-left: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+      }
+      button {
+        background: linear-gradient(100deg, #3f5efb 0.48%, #fc466b 100%);
+        margin: auto;
+        border-radius: 3px;
+        height: 28px;
+        width: 78px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          filter:brightness(0.8)
+        }
+      }
+    }
+  }
+}
+.successMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: greenyellow;
+  text-decoration: none;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+  height: 20px;
+  margin-left: 40px;
+}
+.paginationWrapper {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
