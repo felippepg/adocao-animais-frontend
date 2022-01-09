@@ -1,7 +1,7 @@
 # ADOCAO ANIMAIS FRONTEND
 
 <h1 align="center">
-    <img alt="adocao" title="adocao" src="./src/assets/projeto/adocao.png" />
+    <img alt="adocao" title="adocao" src="./src/assets/logo.png" />
 </h1>
 
 ## Descrição do Projeto
