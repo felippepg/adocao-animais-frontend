@@ -35,7 +35,6 @@ export const Home = () => {
         <div className={style.container}>
           <div className={style.footerContainer}>
             <a href="/adocao">Adotar um Pet</a>
-            <a href="#">Sobre Nós</a>
           </div>
         </div>
       </div>
