@@ -7,7 +7,7 @@
 ## Descrição do Projeto
 Esse projeto é a interface grafica do sistema de Adoção de animais, utilizando 
 a [API](https://github.com/felippepg/api-adocao-animais) feita em Node.
-Para a criaçãodesse projeto foi utilizado o React juntamente com o Typescript.
+Para a criação desse projeto foi utilizado o React juntamente com o Typescript.
 
 ### Pré-requisitos
 
