@@ -1,0 +1,13 @@
+.tableWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  table {
+    border: 1px solid white;
+    tr {
+      border: 1px solid white;
+
+    }
+  }
+}

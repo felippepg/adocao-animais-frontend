@@ -45,9 +45,14 @@ export const All = () => {
   return(
     <div className={global.container}>
       <NavBar />
-      <div className={styles.title}>
-        <p>TODOS OS ANIMAIS JÁ CADASTRADOS</p>
-      </div>
+      {animals?.result.length ? 
+        <div className={styles.title}>
+          <p>TODOS OS ANIMAIS JÁ CADASTRADOS</p>
+        </div> : 
+        <div className={styles.title}>
+          <p>NENHUM ANIMAL FOI CADASTRADO</p>
+        </div>
+      }
       <div className={styles.animalWrapper} >
         {animals?.result.map((item, index) => {
           return(

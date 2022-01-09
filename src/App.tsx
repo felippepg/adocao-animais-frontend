@@ -6,6 +6,7 @@ import { Adocao } from "./pages/Adocao"
 import { Add } from "./pages/Pet/Add"
 import { All } from "./pages/Pet/All"
 import { SignUp } from "./pages/SignUp/SignUp"
+import { MyPets } from "./pages/MyPets"
 export const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ export const App = () => {
         <PrivateRoute exact path="/adocao" component={Adocao}/>
         <PrivateRoute exact path="/pet/add" component={Add} />
         <PrivateRoute exact path="/pet/all" component={All} />
+        <PrivateRoute exact path="/pet/my-pets" component={MyPets} />
       </Switch>
     </BrowserRouter>
   )

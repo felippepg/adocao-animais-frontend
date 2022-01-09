@@ -50,16 +50,22 @@ export const Adocao = () => {
 
     setTimeout(() => {
       return window.location.href = '/'
-    }, 3000);
+    }, 1000);
 
   }
 
   return(
     <div className={global.container}>
       <NavBar />
-      <div className={styles.title}>
-        <p>SELECIONE O ANIMAL QUE DESEJA ADOTAR</p>
-      </div>
+      {animals?.result.length ? 
+        <h1 className={styles.title}>
+          <p>ANIMAIS DISPONÍVEIS PARA ADOÇÃO</p>
+        </h1> : 
+        <h1 className={styles.title}>
+          <p>NÃO HÁ ANIMAIS DISPONÍVEIS PARA ADOÇÃO</p>
+        </h1>
+      }
+      
       <div className={styles.animalWrapper} >
         {animals?.result.map((item, index) => {
           return(
